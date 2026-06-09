@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Inter, Outfit } from "next/font/google";
 import "./globals.css";
+import Navbar from './components/Navbar';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,37 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <body>
-        {/* Main Navigation */}
-        <nav className="navbar" style={{ position: 'sticky', top: 0, padding: '10px 0' }}>
-          <div className="container" style={{ display: 'flex', alignItems: 'center', maxWidth: '100%', padding: '0 2rem' }}>
-            
-            {/* Left Side: Logos (50% width) */}
-            <div style={{ flex: '0 0 50%', display: 'flex', justifyContent: 'flex-start' }}>
-              <a href="/" className="nav-brand" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img src="/nest-logo.png" alt="NEST Cluster Logo" style={{ height: '75px', width: 'auto' }} />
-                <img src="/iitg-logo.svg" alt="IIT Guwahati Logo" style={{ height: '75px', width: 'auto' }} />
-                <div style={{ width: '2px', height: '40px', backgroundColor: 'var(--border)', margin: '0 8px' }}></div>
-                <img src="/mdoner-logo.png" alt="MDoNER Logo" style={{ height: '40px', width: 'auto' }} />
-                <img src="/nec-logo.png" alt="North Eastern Council Logo" style={{ height: '45px', width: 'auto' }} />
-              </a>
-            </div>
-
-            {/* Right Side: Buttons (Start exactly at middle, 50% width) */}
-            <div style={{ flex: '0 0 50%', display: 'flex', justifyContent: 'flex-start' }}>
-              <ul className="nav-links" style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', margin: 0, padding: 0 }}>
-                <li><a href="/" className="nav-link">Home</a></li>
-                <li><a href="/program" className="nav-link">Program</a></li>
-                <li><a href="/speakers" className="nav-link">Speakers</a></li>
-                <li><a href="/register" className="nav-link">Registration</a></li>
-                <li><a href="/sponsorship" className="nav-link">Sponsorship</a></li>
-                <li><a href="/accommodation" className="nav-link">Accommodation</a></li>
-                <li><a href="/contact" className="nav-link">Contact</a></li>
-                <li><a href="/admin" className="btn btn-outline" style={{ padding: '0.4rem 1rem', fontSize: '0.85rem' }}>Admin</a></li>
-              </ul>
-            </div>
-            
-          </div>
-        </nav>
+        <Navbar />
 
         <main style={{ minHeight: 'calc(100vh - 200px)' }}>
           {children}
