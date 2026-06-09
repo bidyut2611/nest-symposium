@@ -945,6 +945,33 @@ img {
 
 /* Responsive Navbar Styles */
 
+/* Default (Desktop) Logo Sizes */
+.brand-logo {
+  height: auto;
+  width: auto;
+}
+
+.brand-logo.nest-logo,
+.brand-logo.iitg-logo {
+  height: 75px;
+}
+
+.brand-logo.mdoner-logo {
+  height: 40px;
+}
+
+.brand-logo.nec-logo {
+  height: 45px;
+}
+
+.logo-divider {
+  width: 2px;
+  height: 40px;
+  background-color: var(--border);
+  margin: 0 8px;
+  flex-shrink: 0;
+}
+
 /* Hamburger Button */
 .hamburger-btn {
   background: none;
