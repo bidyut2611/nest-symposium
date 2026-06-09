@@ -1,0 +1,71 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Speaker {
+  id        String   @id @default(cuid())
+  name      String
+  title     String
+  bio       String
+  imageUrl  String   @default("")
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Event {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  speaker     String   @default("")
+  date        String
+  startTime   String
+  endTime     String
+  location    String   @default("")
+  category    String   @default("session")
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model ContentBlock {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SponsorTier {
+  id        String   @id @default(cuid())
+  name      String
+  price     String
+  color     String   @default("#075589")
+  benefits  String
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AccommodationOption {
+  id          String   @id @default(cuid())
+  name        String
+  type        String
+  priceRange  String
+  amenities   String
+  description String
+  contactInfo String   @default("")
+  bookingUrl  String   @default("")
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

@@ -1,0 +1,4 @@
+/* Specific admin styles overriding or adding to global */
+.admin-layout {
+  margin-top: -80px; /* offset the main padding */
+}
