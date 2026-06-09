@@ -220,7 +220,7 @@ async function main() {
       {
         slug: 'contact-email',
         title: 'Contact Email',
-        content: 'symposium@nestcluster.edu.in',
+        content: 'nestcluster@gmail.com',
       },
       {
         slug: 'contact-phone',

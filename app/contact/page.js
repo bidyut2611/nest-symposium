@@ -32,9 +32,9 @@ export default async function ContactPage() {
             <div className="contact-card">
               <div className="contact-icon">✉️</div>
               <h3>Email</h3>
-              <p>{email?.content || 'symposium@nestcluster.edu.in'}</p>
+              <p>{email?.content || 'nestcluster@gmail.com'}</p>
               <a
-                href={`mailto:${email?.content || 'symposium@nestcluster.edu.in'}`}
+                href={`mailto:${email?.content || 'nestcluster@gmail.com'}`}
                 className="btn btn-outline mt-4"
                 style={{ fontSize: '0.9rem', padding: '0.5rem 1.25rem' }}
               >
@@ -124,7 +124,7 @@ export default async function ContactPage() {
               For general inquiries, sponsorship, or accommodation, please reach out through any of the channels above.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={`mailto:${email?.content || 'symposium@nestcluster.edu.in'}`} className="btn btn-primary">
+              <a href={`mailto:${email?.content || 'nestcluster@gmail.com'}`} className="btn btn-primary">
                 ✉️ Write to Us
               </a>
               <a href="/sponsorship" className="btn btn-outline">

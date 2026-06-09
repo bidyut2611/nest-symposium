@@ -13,7 +13,7 @@ async function main() {
     { slug: 'sponsorship-contact', title: 'Sponsorship Contact Info', content: 'For sponsorship inquiries, please contact our sponsorship team at sponsorship@nestcluster.edu.in or call +91 361 258 2000.' },
     { slug: 'exhibition-intro', title: 'Exhibition Introduction', content: 'The NEST Cluster Symposium 2026 Exhibition provides an excellent platform for companies and organizations to showcase their latest products, services, and innovations. Exhibition booths are located in the main conference foyer, ensuring maximum visibility and foot traffic throughout the event.' },
     { slug: 'accommodation-intro', title: 'Accommodation Page Introduction', content: 'We have arranged comfortable accommodation options for all symposium attendees. Whether you prefer on-campus convenience or off-campus hotel stays, we have options to suit every budget and preference.' },
-    { slug: 'contact-email', title: 'Contact Email', content: 'symposium@nestcluster.edu.in' },
+    { slug: 'contact-email', title: 'Contact Email', content: 'nestcluster@gmail.com' },
     { slug: 'contact-phone', title: 'Contact Phone', content: '+91 361 258 2000' },
     { slug: 'contact-address', title: 'Contact Address', content: 'NEST Cluster, IIT Guwahati, Amingaon, North Guwahati, Assam 781039, India' },
     { slug: 'contact-map-embed', title: 'Google Maps Embed URL', content: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.674890584498!2d91.69137831502486!3d26.19194998344695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5982d3f9ed5d%3A0x5b2e81e340d4060c!2sIIT%20Guwahati!5e0!3m2!1sen!2sin!4v1234567890' },

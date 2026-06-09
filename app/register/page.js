@@ -84,7 +84,7 @@ export default async function RegisterPage() {
               </div>
               
               <div style={{ marginTop: 'auto', backgroundColor: 'var(--bg-main)', padding: '1rem', borderRadius: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                <strong>Need help?</strong> Contact us at symposium@nestcluster.edu.in for any payment or registration issues.
+                <strong>Need help?</strong> Contact us at nestcluster@gmail.com for any payment or registration issues.
               </div>
             </div>
 

@@ -123,7 +123,7 @@ export default async function Accommodation() {
               Our organizing committee is here to help you find the best stay for the duration of the symposium.
               Feel free to reach out for special requirements or group bookings.
             </p>
-            <a href={`mailto:${contactEmail?.content || 'symposium@nestcluster.edu.in'}`} className="btn btn-secondary">
+            <a href={`mailto:${contactEmail?.content || 'nestcluster@gmail.com'}`} className="btn btn-secondary">
               ✉️ Contact Accommodation Desk
             </a>
           </div>

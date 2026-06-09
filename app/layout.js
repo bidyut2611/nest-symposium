@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
               </div>
               <div>
                 <h3 className="footer-heading">Contact</h3>
-                <p className="text-muted">symposium@nestcluster.edu.in<br/>+91 361 258 2000</p>
+                <p className="text-muted">nestcluster@gmail.com<br/>+91 361 258 2000</p>
               </div>
             </div>
             <div className="footer-bottom">
