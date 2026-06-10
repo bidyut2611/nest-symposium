@@ -1241,28 +1241,159 @@ img {
     display: flex !important;
   }
 
+  .navbar {
+    overflow-x: hidden;
+  }
+
+  .navbar .container,
   .navbar-container {
-    padding: 0 1rem !important;
+    padding: 0 clamp(0.5rem, 2vw, 1rem) !important;
+    min-height: 60px;
   }
 
   .navbar-logos-wrapper {
-    flex: 0 0 auto !important;
+    flex: 1 1 0% !important;
+    min-width: 0;
+    overflow: hidden;
+    max-width: calc(100% - 50px); /* Reserve space for hamburger */
   }
 
-  .brand-logo.nest-logo, .brand-logo.iitg-logo {
-    height: 35px !important;
+  .nav-brand {
+    gap: clamp(3px, 1vw, 8px) !important;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .brand-logo {
+    flex-shrink: 1;
+    min-width: 0;
+    object-fit: contain;
+  }
+
+  /* Fluid logo sizing using clamp for smooth scaling across all phone sizes */
+  .brand-logo.nest-logo,
+  .brand-logo.iitg-logo {
+    height: clamp(28px, 7vw, 42px) !important;
+    width: auto !important;
+    max-width: none;
   }
   
   .brand-logo.mdoner-logo {
-    height: 20px !important;
+    height: clamp(14px, 4vw, 24px) !important;
+    width: auto !important;
+    max-width: none;
   }
   
   .brand-logo.nec-logo {
-    height: 25px !important;
+    height: clamp(18px, 5vw, 28px) !important;
+    width: auto !important;
+    max-width: none;
   }
 
   .logo-divider {
-    height: 25px !important;
-    margin: 0 4px !important;
+    height: clamp(18px, 5vw, 28px) !important;
+    margin: 0 clamp(2px, 0.5vw, 5px) !important;
+  }
+
+  .mobile-toggle-wrapper {
+    flex-shrink: 0;
+    padding-left: clamp(4px, 1.5vw, 12px);
   }
 }
+
+/* Mid-size phones (480px - 599px) — Galaxy S, Pixel, OnePlus, etc. */
+@media (min-width: 480px) and (max-width: 599px) {
+  .brand-logo.nest-logo,
+  .brand-logo.iitg-logo {
+    height: 36px !important;
+  }
+
+  .brand-logo.mdoner-logo {
+    height: 20px !important;
+  }
+
+  .brand-logo.nec-logo {
+    height: 24px !important;
+  }
+
+  .logo-divider {
+    height: 26px !important;
+    margin: 0 4px !important;
+  }
+
+  .nav-brand {
+    gap: 6px !important;
+  }
+
+  .navbar .container,
+  .navbar-container {
+    padding: 0 0.75rem !important;
+  }
+}
+
+/* Larger phones (600px - 767px) — Galaxy S Ultra, tablets in portrait, etc. */
+@media (min-width: 600px) and (max-width: 767px) {
+  .brand-logo.nest-logo,
+  .brand-logo.iitg-logo {
+    height: 42px !important;
+  }
+
+  .brand-logo.mdoner-logo {
+    height: 24px !important;
+  }
+
+  .brand-logo.nec-logo {
+    height: 28px !important;
+  }
+
+  .logo-divider {
+    height: 30px !important;
+    margin: 0 6px !important;
+  }
+
+  .nav-brand {
+    gap: 8px !important;
+  }
+
+  .navbar .container,
+  .navbar-container {
+    padding: 0 1rem !important;
+  }
+}
+
+/* Extra-small phones (<400px) */
+@media (max-width: 399px) {
+  .navbar .container,
+  .navbar-container {
+    padding: 0 0.4rem !important;
+  }
+
+  .nav-brand {
+    gap: 3px !important;
+  }
+
+  .brand-logo.nest-logo,
+  .brand-logo.iitg-logo {
+    height: 26px !important;
+  }
+  
+  .brand-logo.mdoner-logo {
+    height: 14px !important;
+  }
+  
+  .brand-logo.nec-logo {
+    height: 18px !important;
+  }
+
+  .logo-divider {
+    height: 18px !important;
+    margin: 0 2px !important;
+  }
+
+  .hamburger-line {
+    width: 22px;
+    height: 2.5px;
+  }
+}
+
