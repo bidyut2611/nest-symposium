@@ -1241,9 +1241,7 @@ img {
     display: flex !important;
   }
 
-  .navbar {
-    overflow-x: hidden;
-  }
+  /* Removed overflow-x: hidden from .navbar because it was clipping the absolute positioned mobile menu */
 
   .navbar .container,
   .navbar-container {
