@@ -10,17 +10,12 @@ export default function InaugurationScreen() {
 
   useEffect(() => {
     setIsClient(true);
-    const hasSeen = sessionStorage.getItem('hasSeenInauguration');
-    if (hasSeen) {
-      setIsVisible(false);
-    }
   }, []);
 
   if (!isVisible || !isClient) return null;
 
   const handleOpen = () => {
     setIsOpen(true);
-    sessionStorage.setItem('hasSeenInauguration', 'true');
     
     const audio = new Audio('/orchestral-fanfare.mp3');
     audio.play().catch(e => console.log("Audio play prevented:", e));
