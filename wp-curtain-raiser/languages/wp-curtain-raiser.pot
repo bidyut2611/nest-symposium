@@ -1,0 +1,408 @@
+# Copyright (C) 2026 Team Peenak
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Curtain Raiser for Inaugural Ceremony 1.6.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-curtain-raiser\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-02-22T14:48:02+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wp-curtain-raiser\n"
+
+#. Plugin Name of the plugin
+#: wp-curtain-raiser.php
+msgid "Curtain Raiser for Inaugural Ceremony"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wp-curtain-raiser.php
+msgid "https://wordpress.org/plugins/wp-curtain-raiser/"
+msgstr ""
+
+#. Description of the plugin
+#: wp-curtain-raiser.php
+msgid "Adds an animated curtain-raiser overlay to your WordPress site for inaugural ceremonies. Trigger via ?curtain_ceremony=true."
+msgstr ""
+
+#. Author of the plugin
+#: wp-curtain-raiser.php
+msgid "Team Peenak"
+msgstr ""
+
+#. Author URI of the plugin
+#: wp-curtain-raiser.php
+msgid "https://www.peenak.com/"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:88
+#: includes/class-wp-curtain-raiser-remote.php:89
+#: includes/class-wp-curtain-raiser-remote.php:143
+#: includes/class-wp-curtain-raiser-settings.php:506
+msgid "Curtain Remote"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:101
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:127
+#: includes/class-wp-curtain-raiser-remote.php:212
+#: includes/class-wp-curtain-raiser.php:261
+msgid "Open Curtain"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:128
+msgid "Opening…"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:129
+msgid "✓ Curtain Opened!"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:130
+#: includes/class-wp-curtain-raiser-remote.php:217
+msgid "Close Curtain"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:131
+msgid "Closing…"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:132
+msgid "✓ Curtain Closed!"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:133
+#: includes/class-wp-curtain-raiser-remote.php:195
+msgid "Copy Link"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:134
+msgid "✓ Copied!"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:144
+msgid "Create a session link, share it with your attendees, then open the curtain for everyone the moment your event begins."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:156
+msgid "Session active"
+msgstr ""
+
+#. translators: %s = human-readable time difference
+#: includes/class-wp-curtain-raiser-remote.php:163
+#, php-format
+msgid "Expires in %s"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:172
+msgid "No active session"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:174
+msgid "Create a new session below to get your attendee link."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:185
+msgid "Attendee Link"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:187
+msgid "Send this link to your attendees before the event. They will see the closed curtain and wait for you to open it."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:205
+msgid "Remote Control"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:207
+msgid "When your ceremony is ready to begin, press Open Curtain. Every attendee on the link will see the curtain open within about 2 seconds."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:228
+msgid "End Session"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:230
+msgid "Immediately invalidates the attendee link. Anyone still on the page will stop receiving remote signals."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:236
+msgid "End Session Now"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:237
+msgid "End this session? The attendee link will stop working immediately."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:248
+msgid "Start New Session"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:249
+msgid "Create a Session"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:254
+msgid "This will end the current session and generate a fresh attendee link."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:258
+msgid "A session gives you a unique attendee link and lets you open the curtain remotely from this page."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:268
+msgid "Session Duration"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:278
+msgid "How long the attendee link stays valid. Choose a window that covers your whole event."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:287
+msgid "Generate New Session Link"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:288
+msgid "Create Session &amp; Get Link"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:347
+msgid "An error occurred. Please try again."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:355
+msgid "Network error. Please try again."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:369
+msgid "Signal sent! All attendees' curtains will open within a couple of seconds."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:384
+msgid "Signal sent! All attendees' curtains will close within a couple of seconds."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:405
+#: includes/class-wp-curtain-raiser-remote.php:440
+msgid "Permission denied."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:426
+msgid "Session created! Copy the Attendee Link below and share it before your event starts."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:445
+msgid "Session ended. The attendee link is no longer active."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-remote.php:567
+#: includes/class-wp-curtain-raiser-remote.php:609
+msgid "Token not found or already expired."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:35
+msgid "WP Curtain Raiser"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:36
+#: includes/class-wp-curtain-raiser-settings.php:451
+msgid "Curtain Raiser"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:60
+msgid "Curtain Appearance"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:68
+msgid "Curtain Style"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:77
+msgid "Curtain Colour"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:87
+msgid "Curtain Image"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:97
+msgid "Pull-Rope Image"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:106
+msgid "Open / Close Speed"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:115
+msgid "Auto-Open Countdown"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:122
+msgid "Enable Countdown"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:130
+msgid "Reveal Date &amp; Time"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:206
+msgid "Choose how the curtain looks — pick a built-in style, a custom colour, or your own image. The pull-rope image and animation speed are also set here."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:210
+msgid "Display a live countdown timer over the curtain. When the clock reaches zero the curtain opens automatically — no one needs to pull the rope."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:224
+msgid "Custom — use colour or image below"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:233
+msgid "Pick a built-in gradient, or choose Custom to set your own colour or upload an image."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:248
+msgid "Solid fill colour used when no curtain image is selected. Defaults to dark red."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:262
+msgid "Default Curtain"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:279
+msgid "Curtain image options"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:283
+msgid "No image (use colour/theme)"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:290
+msgid "None"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:314
+msgid "Upload or choose from Media Library"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:324
+msgid "Custom"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:339
+msgid "Select Curtain Image"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:340
+#: includes/class-wp-curtain-raiser-settings.php:371
+msgid "Use this image"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:341
+#: includes/class-wp-curtain-raiser-settings.php:372
+msgid "Choose Image"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:351
+msgid "Choose a bundled image, upload your own, or leave on None to use the colour or gradient above."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:370
+msgid "Select Pull-Rope Image"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:375
+msgid "The pull-rope guests click to open the curtain. Leave blank to use the bundled rope."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:398
+msgid "How long the curtain takes to fully open or close. Drag left for snappier, right for more dramatic."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:413
+msgid "Show a countdown clock on the curtain and open it automatically when the timer reaches zero"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:435
+msgid "The curtain opens automatically at this date and time. Uses your WordPress site timezone."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:452
+msgid "Configure the look and behaviour of your ceremony curtain. Save, then preview below."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:458
+msgid "Save Changes"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:464
+msgid "Preview &amp; Share"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:466
+msgid "Open the curtain experience in a new tab to check your settings, or copy the URL below to share with your audience."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:473
+msgid "Preview Curtain ↗"
+msgstr ""
+
+#. translators: %s: the trigger URL
+#: includes/class-wp-curtain-raiser-settings.php:480
+#, php-format
+msgid "Audience URL: %s"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:488
+msgid "Quick Start"
+msgstr ""
+
+#. translators: %s: query param
+#: includes/class-wp-curtain-raiser-settings.php:494
+#, php-format
+msgid "Add %s to any page URL to show the curtain."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:499
+msgid "Share that URL with your attendees — they will see the closed curtain on load."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser-settings.php:500
+msgid "Attendees pull the rope to open the curtain themselves, or&hellip;"
+msgstr ""
+
+#. translators: %s: link to remote control page
+#: includes/class-wp-curtain-raiser-settings.php:505
+#, php-format
+msgid "&hellip;use the %s to open all curtains at once from here in the dashboard."
+msgstr ""
+
+#: includes/class-wp-curtain-raiser.php:183
+msgid "Curtain opened"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser.php:184
+msgid "Curtain closed"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser.php:264
+msgid "Curtain Rope"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser.php:320
+msgid "Left Curtain"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser.php:321
+msgid "Right Curtain"
+msgstr ""
+
+#: includes/class-wp-curtain-raiser.php:363
+msgid "Curtain overlay — pull the rope to reveal the page"
+msgstr ""

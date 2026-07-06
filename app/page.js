@@ -56,8 +56,12 @@ export default async function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             {featuredSpeakers.map(speaker => (
               <div key={speaker.id} className="card text-center">
-                <div style={{ width: '120px', height: '120px', borderRadius: '50%', backgroundColor: 'var(--primary-light)', margin: '0 auto 1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '2rem', fontWeight: 'bold' }}>
-                  {speaker.name.charAt(0)}
+                <div style={{ width: '120px', height: '120px', borderRadius: '50%', backgroundColor: 'var(--primary-light)', margin: '0 auto 1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '2rem', fontWeight: 'bold', overflow: 'hidden' }}>
+                  {speaker.imageUrl ? (
+                    <img src={speaker.imageUrl} alt={speaker.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  ) : (
+                    speaker.name.charAt(0)
+                  )}
                 </div>
                 <h3>{speaker.name}</h3>
                 <p className="text-primary font-weight-bold">{speaker.title}</p>

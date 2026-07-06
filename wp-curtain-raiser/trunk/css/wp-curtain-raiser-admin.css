@@ -1,0 +1,271 @@
+/* ==========================================================================
+   WP Curtain Raiser — Admin stylesheet
+   Version: 1.6.0
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   v1.0 — Image thumb previews
+   -------------------------------------------------------------------------- */
+
+/* Tighten up the thumb previews under image fields */
+.wp-curtain-raiser-thumb img {
+    border:        1px solid #c3c4c7;
+    border-radius: 3px;
+    padding:       3px;
+    background:    #fff;
+}
+
+/* --------------------------------------------------------------------------
+   v1.0 — Animation speed range slider
+   -------------------------------------------------------------------------- */
+
+/* Give the range slider a bit of breathing room */
+input[type="range"]#animation_speed {
+    vertical-align: middle;
+    width: 200px;
+}
+
+#animation_speed_display {
+    display:       inline-block;
+    min-width:     5em;
+    margin-left:   8px;
+    font-weight:   600;
+    color:         #2271b1;
+}
+
+/* --------------------------------------------------------------------------
+   v1.4 — Curtain image swatch picker
+   -------------------------------------------------------------------------- */
+
+.wcr-image-swatches {
+    display:   flex;
+    flex-wrap: wrap;
+    gap:       10px;
+    margin:    4px 0 0;
+}
+
+.wcr-swatch {
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+    gap:            4px;
+    cursor:         pointer;
+    border:         2px solid #c3c4c7;
+    border-radius:  6px;
+    padding:        4px;
+    background:     #fff;
+    transition:     border-color 0.15s, box-shadow 0.15s;
+    width:          96px;
+}
+
+.wcr-swatch:hover {
+    border-color: #2271b1;
+}
+
+.wcr-swatch--selected {
+    border-color: #2271b1;
+    box-shadow:   0 0 0 2px #2271b1;
+}
+
+/* The thumbnail image inside a swatch */
+.wcr-swatch-img {
+    display:       block;
+    width:         84px;
+    height:        60px;
+    object-fit:    cover;
+    border-radius: 3px;
+}
+
+/* "None" swatch placeholder */
+.wcr-swatch-none {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    width:           84px;
+    height:          60px;
+    background:      repeating-linear-gradient(
+                         45deg,
+                         #f0f0f1,
+                         #f0f0f1 5px,
+                         #fff 5px,
+                         #fff 10px
+                     );
+    border-radius:   3px;
+    font-size:       12px;
+    color:           #646970;
+    font-style:      italic;
+}
+
+/* Upload / custom swatch */
+.wcr-swatch--upload .wcr-swatch-upload-icon {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    width:           84px;
+    height:          60px;
+    background:      #f6f7f7;
+    border-radius:   3px;
+    border:          1px dashed #c3c4c7;
+}
+
+.wcr-swatch--upload .dashicons {
+    font-size: 28px;
+    width:     28px;
+    height:    28px;
+    color:     #646970;
+}
+
+/* Small label below each swatch */
+.wcr-swatch-label {
+    font-size:   11px;
+    color:       #3c434a;
+    text-align:  center;
+    line-height: 1.3;
+    max-width:   84px;
+    overflow:    hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Custom URL input row shown below swatches */
+.wcr-custom-url-row {
+    display:     flex;
+    flex-wrap:   wrap;
+    align-items: center;
+    gap:         6px;
+    max-width:   500px;
+}
+
+/* --------------------------------------------------------------------------
+   v1.7 — Settings page intro paragraph
+   -------------------------------------------------------------------------- */
+
+/* Subtitle line immediately under the settings page H1 */
+.wrap > h1 + .description {
+    margin-bottom: 16px;
+    font-size:     14px;
+    color:         #50575e;
+}
+
+/* --------------------------------------------------------------------------
+   v1.4 — Theme select + datetime-local input
+   -------------------------------------------------------------------------- */
+
+/* Constrain the theme select so it doesn't span full column width */
+select#curtain_theme {
+    min-width: 200px;
+}
+
+/* Make the datetime-local input sensibly wide and vertically centred */
+input[type="datetime-local"]#countdown_target {
+    padding:        4px 6px;
+    vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------
+   v1.6 — Remote Control admin page (Tools > Curtain Remote)
+   -------------------------------------------------------------------------- */
+
+/* Intro paragraph beneath the page H1 */
+.wcr-remote-wrap > .description {
+    margin-bottom: 16px;
+    font-size:     14px;
+    color:         #50575e;
+}
+
+.wcr-remote-wrap .postbox {
+    margin-top: 16px;
+}
+
+/* Restore left padding on postbox section headings (WP default strips it) */
+.wcr-remote-wrap .postbox .hndle {
+    padding-left: 12px;
+}
+
+/* Status block — no default hndle, just an inside padding strip */
+.wcr-status-block.postbox {
+    border-left: 4px solid #c3c4c7;
+}
+
+.wcr-status-block.postbox .inside {
+    padding: 12px 16px;
+}
+
+/* Status indicator line */
+.wcr-status {
+    display:     flex;
+    align-items: center;
+    gap:         6px;
+    font-size:   14px;
+    margin:      0;
+}
+
+.wcr-status--active .dashicons {
+    color: #00a32a; /* WP success green */
+}
+
+.wcr-status-block.postbox.wcr-has-token {
+    border-left-color: #00a32a;
+}
+
+.wcr-status--none .dashicons {
+    color: #72777c;
+}
+
+.wcr-expires {
+    margin-left: 8px;
+    font-size:   12px;
+    color:       #646970;
+    font-style:  italic;
+}
+
+/* Attendee link row: input + copy button side by side */
+.wcr-url-row {
+    display:   flex;
+    gap:       8px;
+    flex-wrap: wrap;
+    max-width: 760px;
+}
+
+.wcr-url-row input {
+    flex: 1 1 400px;
+}
+
+/* Remote control box — centred content with extra breathing room */
+.wcr-reveal-box .hndle {
+    background: #f6f7f7;
+}
+
+.wcr-reveal-box .inside {
+    text-align: center;
+    padding:    28px 24px;
+}
+
+.wcr-reveal-box .description {
+    max-width:   560px;
+    margin:      0 auto 20px;
+    font-size:   14px;
+    color:       #50575e;
+}
+
+/* Open + Close buttons side by side */
+.wcr-control-row {
+    display:         flex;
+    flex-wrap:       wrap;
+    gap:             12px;
+    justify-content: center;
+}
+
+/* Slightly widen the hero buttons for visual weight */
+.wcr-control-row .button-hero {
+    min-width: 160px;
+}
+
+/* Feedback text after reveal / close */
+.wcr-reveal-result {
+    margin-top: 16px;
+    font-size:  14px;
+    font-weight: 500;
+    color:      #00a32a;
+    min-height: 1.5em;
+}

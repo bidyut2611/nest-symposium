@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HackathonProblems from '../components/HackathonProblems';
 
 const DAY_TITLES = {
   '2026-08-10': { title: 'Day 1 – Registration & Inaugural Day', aims: 'Welcome delegates, formally inaugurate the conference, showcase culture from the North Eastern states, and create early networking opportunities.' },
@@ -229,6 +230,9 @@ export default function ProgramClient({ events, intro, brochureUrl, registerUrl 
           )}
         </div>
       </section>
+
+      {/* Hackathon Problems Section */}
+      <HackathonProblems />
 
       {/* Register CTA */}
       {registerUrl && (

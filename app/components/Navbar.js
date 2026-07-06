@@ -18,7 +18,14 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Program', path: '/program' },
+    { 
+      name: 'Program', 
+      path: '/program',
+      sublinks: [
+        { name: 'Program Schedule', path: '/program' },
+        { name: 'Hackathon Problems', path: '/program#hackathon' }
+      ]
+    },
     { name: 'Speakers', path: '/speakers' },
     { name: 'Registration', path: '/register' },
     { name: 'Sponsorship', path: '/sponsorship' },
@@ -45,13 +52,25 @@ export default function Navbar() {
         <div className="navbar-links-wrapper desktop-only" style={{ flex: '0 0 50%', display: 'flex', justifyContent: 'flex-start' }}>
           <ul className="nav-links" style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', margin: 0, padding: 0 }}>
             {navLinks.map((link) => (
-              <li key={link.name}>
+              <li key={link.name} className={link.sublinks ? 'nav-item-dropdown' : ''} style={{ position: 'relative' }}>
                 <Link 
                   href={link.path} 
                   className={`nav-link ${pathname === link.path ? 'active' : ''}`}
                 >
                   {link.name}
+                  {link.sublinks && <span className="dropdown-arrow">▼</span>}
                 </Link>
+                {link.sublinks && (
+                  <ul className="dropdown-menu">
+                    {link.sublinks.map(sublink => (
+                      <li key={sublink.name}>
+                        <Link href={sublink.path} className="dropdown-link">
+                          {sublink.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
             <li>
@@ -88,6 +107,22 @@ export default function Navbar() {
               >
                 {link.name}
               </Link>
+              {link.sublinks && (
+                <ul className="mobile-sublinks" style={{ paddingLeft: '1.5rem', listStyle: 'none' }}>
+                  {link.sublinks.map(sublink => (
+                    <li key={sublink.name}>
+                      <Link 
+                        href={sublink.path} 
+                        className="mobile-nav-link sublink" 
+                        onClick={closeMobileMenu}
+                        style={{ fontSize: '0.9rem', padding: '0.5rem 0' }}
+                      >
+                        - {sublink.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
           <li style={{ marginTop: '1rem' }}>

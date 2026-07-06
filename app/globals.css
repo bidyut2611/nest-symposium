@@ -1394,4 +1394,256 @@ img {
     height: 2.5px;
   }
 }
+/* ========================================================
+   NAVBAR DROPDOWN
+   ======================================================== */
+.nav-item-dropdown:hover .dropdown-menu {
+  display: block;
+}
 
+.dropdown-arrow {
+  font-size: 0.6rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 1000;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-link {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown-link:hover {
+  background-color: var(--bg-surface);
+  color: var(--primary);
+}
+
+/* ========================================================
+   INAUGURATION LANDING SCREEN
+   ======================================================== */
+.inauguration-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+}
+
+.inauguration-overlay.opening {
+  pointer-events: none; /* Prevent clicks while opening */
+}
+
+/* Curtains */
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 10000;
+  transition: transform 2.5s cubic-bezier(0.25, 1, 0.5, 1);
+  overflow: hidden;
+}
+
+.curtain-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+}
+
+.curtain-image.mirrored {
+  transform: scaleX(-1);
+}
+
+.curtain-left {
+  left: 0;
+}
+
+.curtain-right {
+  right: 0;
+}
+
+/* Curtain Open Animations */
+.curtain-left.open {
+  transform: translateX(-100%);
+}
+
+.curtain-right.open {
+  transform: translateX(100%);
+}
+
+/* Rope */
+.inauguration-rope {
+  position: fixed;
+  top: 0;
+  right: 5%;
+  z-index: 10003;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: top 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.3s ease;
+  padding: 0;
+}
+
+.inauguration-rope:hover {
+  transform: translateY(10px);
+}
+
+.inauguration-rope.hidden {
+  top: -200px;
+}
+
+.inauguration-rope img {
+  width: auto;
+  max-width: 120px;
+}
+
+/* Particles / Sparkles */
+.inauguration-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255,215,0,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: twinkle 4s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes twinkle {
+  0% { transform: translateY(0); opacity: 0.2; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-50px); opacity: 0.2; }
+}
+
+/* Content */
+.inauguration-content {
+  position: relative;
+  z-index: 10002;
+  transition: opacity 1s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.inauguration-content.fade-out {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.inauguration-card {
+  text-align: center;
+  padding: 3rem;
+  max-width: 700px;
+  background: rgba(15, 23, 42, 0.85); /* Glass dark */
+  border: 1px solid rgba(255, 215, 0, 0.3); /* Gold border */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(16px);
+}
+
+.inauguration-badge {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, var(--accent), #fbbf24);
+  color: var(--secondary-dark);
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.inauguration-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.inauguration-date {
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.inauguration-poster-container {
+  margin: 0 auto 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border: 2px solid rgba(255,255,255,0.1);
+  background: #ffffff;
+  display: inline-block;
+  padding: 10px;
+}
+
+.inauguration-poster {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.inauguration-subtitle {
+  color: var(--text-light);
+  opacity: 0.8;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.inauguration-btn {
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  box-shadow: 0 0 15px rgba(252, 223, 84, 0.3);
+  transition: all 0.3s ease;
+}
+
+.inauguration-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 25px rgba(252, 223, 84, 0.6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .inauguration-title { font-size: 2rem; }
+  .inauguration-card { padding: 2rem 1.5rem; margin: 0 1rem; }
+}

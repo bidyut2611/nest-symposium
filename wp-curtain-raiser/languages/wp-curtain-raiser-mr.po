@@ -1,0 +1,453 @@
+# Copyright (C) 2026 Team Peenak
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Curtain Raiser for Inaugural Ceremony 1.6.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-curtain-"
+"raiser\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-02-22T14:48:02+00:00\n"
+"PO-Revision-Date: 2026-02-22T14:48:02+00:00\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: wp-curtain-raiser\n"
+"Language: mr\n"
+
+#. Plugin Name of the plugin
+#: wp-curtain-raiser.php
+msgid "Curtain Raiser for Inaugural Ceremony"
+msgstr "उद्घाटन समारंभासाठी पडदा रेझर"
+
+#. Plugin URI of the plugin
+#: wp-curtain-raiser.php
+msgid "https://wordpress.org/plugins/wp-curtain-raiser/"
+msgstr "https://wordpress.org/plugins/wp-curtain-raiser/"
+
+#. Description of the plugin
+#: wp-curtain-raiser.php
+msgid ""
+"Adds an animated curtain-raiser overlay to your WordPress site for inaugural "
+"ceremonies. Trigger via ?curtain_ceremony=true."
+msgstr "तुमच्या WordPress साइटवर उद्घाटन समारंभासाठी अ‍ॅनिमेटेड पडदा-रेझर ओव्हरले जोडते. ?curtain_ceremony=true ने सुरू करा."
+
+#. Author of the plugin
+#: wp-curtain-raiser.php
+msgid "Team Peenak"
+msgstr "Team Peenak"
+
+#. Author URI of the plugin
+#: wp-curtain-raiser.php
+msgid "https://www.peenak.com/"
+msgstr "https://www.peenak.com/"
+
+#: includes/class-wp-curtain-raiser-remote.php:88
+#: includes/class-wp-curtain-raiser-remote.php:89
+#: includes/class-wp-curtain-raiser-remote.php:143
+#: includes/class-wp-curtain-raiser-settings.php:506
+msgid "Curtain Remote"
+msgstr "पडदा रिमोट"
+
+#: includes/class-wp-curtain-raiser-remote.php:101
+msgid "You do not have permission to access this page."
+msgstr "या पानाला प्रवेश करण्याची परवानगी नाही."
+
+#: includes/class-wp-curtain-raiser-remote.php:127
+#: includes/class-wp-curtain-raiser-remote.php:212
+#: includes/class-wp-curtain-raiser.php:261
+msgid "Open Curtain"
+msgstr "पडदा उघडा"
+
+#: includes/class-wp-curtain-raiser-remote.php:128
+msgid "Opening…"
+msgstr "उघडत आहे…"
+
+#: includes/class-wp-curtain-raiser-remote.php:129
+msgid "✓ Curtain Opened!"
+msgstr "✓ पडदा उघडले!"
+
+#: includes/class-wp-curtain-raiser-remote.php:130
+#: includes/class-wp-curtain-raiser-remote.php:217
+msgid "Close Curtain"
+msgstr "पडदा बंद करा"
+
+#: includes/class-wp-curtain-raiser-remote.php:131
+msgid "Closing…"
+msgstr "बंद करत आहे…"
+
+#: includes/class-wp-curtain-raiser-remote.php:132
+msgid "✓ Curtain Closed!"
+msgstr "✓ पडदा बंद झाले!"
+
+#: includes/class-wp-curtain-raiser-remote.php:133
+#: includes/class-wp-curtain-raiser-remote.php:195
+msgid "Copy Link"
+msgstr "लिंक कॉपी करा"
+
+#: includes/class-wp-curtain-raiser-remote.php:134
+msgid "✓ Copied!"
+msgstr "✓ कॉपी झाले!"
+
+#: includes/class-wp-curtain-raiser-remote.php:144
+msgid ""
+"Create a session link, share it with your attendees, then open the curtain "
+"for everyone the moment your event begins."
+msgstr "सेशन लिंक तयार करा, ती सहभागींसोबत शेअर करा, आणि कार्यक्रम सुरू होताच सर्वांसाठी पडदा उघडा."
+
+#: includes/class-wp-curtain-raiser-remote.php:156
+msgid "Session active"
+msgstr "सेशन सक्रिय"
+
+#. translators: %s = human-readable time difference
+#: includes/class-wp-curtain-raiser-remote.php:163
+#, php-format
+msgid "Expires in %s"
+msgstr "%s मध्ये कालबाह्य होईल"
+
+#: includes/class-wp-curtain-raiser-remote.php:172
+msgid "No active session"
+msgstr "कोणतेही सक्रिय सेशन नाही"
+
+#: includes/class-wp-curtain-raiser-remote.php:174
+msgid "Create a new session below to get your attendee link."
+msgstr "सहभागी लिंक मिळवण्यासाठी खाली नवीन सेशन तयार करा."
+
+#: includes/class-wp-curtain-raiser-remote.php:185
+msgid "Attendee Link"
+msgstr "सहभागी लिंक"
+
+#: includes/class-wp-curtain-raiser-remote.php:187
+msgid ""
+"Send this link to your attendees before the event. They will see the closed "
+"curtain and wait for you to open it."
+msgstr "कार्यक्रमापूर्वी ही लिंक सहभागींस पाठवा. त्यांना बंद पडदा दिसेल आणि ते तुम्ही उघडण्याची वाट पाहतील."
+
+#: includes/class-wp-curtain-raiser-remote.php:205
+msgid "Remote Control"
+msgstr "रिमोट कंट्रोल"
+
+#: includes/class-wp-curtain-raiser-remote.php:207
+msgid ""
+"When your ceremony is ready to begin, press Open Curtain. Every attendee on "
+"the link will see the curtain open within about 2 seconds."
+msgstr "समारंभ सुरू करण्यास तयार झाल्यावर Open Curtain दाबा. लिंकवरील प्रत्येक सहभागीला सुमारे 2 सेकंदांत पडदा उघडलेले दिसेल."
+
+#: includes/class-wp-curtain-raiser-remote.php:228
+msgid "End Session"
+msgstr "सेशन समाप्त करा"
+
+#: includes/class-wp-curtain-raiser-remote.php:230
+msgid ""
+"Immediately invalidates the attendee link. Anyone still on the page will "
+"stop receiving remote signals."
+msgstr "यामुळे सहभागी लिंक तात्काळ अमान्य होते. पानावर असलेल्यांना पुढे रिमोट सिग्नल मिळणार नाहीत."
+
+#: includes/class-wp-curtain-raiser-remote.php:236
+msgid "End Session Now"
+msgstr "आता सेशन समाप्त करा"
+
+#: includes/class-wp-curtain-raiser-remote.php:237
+msgid "End this session? The attendee link will stop working immediately."
+msgstr "हे सेशन समाप्त करायचे? सहभागी लिंक लगेचच बंद होईल."
+
+#: includes/class-wp-curtain-raiser-remote.php:248
+msgid "Start New Session"
+msgstr "नवीन सेशन सुरू करा"
+
+#: includes/class-wp-curtain-raiser-remote.php:249
+msgid "Create a Session"
+msgstr "सेशन तयार करा"
+
+#: includes/class-wp-curtain-raiser-remote.php:254
+msgid "This will end the current session and generate a fresh attendee link."
+msgstr "यामुळे चालू सेशन संपेल आणि नवीन सहभागी लिंक तयार होईल."
+
+#: includes/class-wp-curtain-raiser-remote.php:258
+msgid ""
+"A session gives you a unique attendee link and lets you open the curtain "
+"remotely from this page."
+msgstr "सेशन तुम्हाला एक वेगळी सहभागी लिंक देते आणि या पानावरून पडदा रिमोटने उघडू देते."
+
+#: includes/class-wp-curtain-raiser-remote.php:268
+msgid "Session Duration"
+msgstr "सेशन कालावधी"
+
+#: includes/class-wp-curtain-raiser-remote.php:278
+msgid ""
+"How long the attendee link stays valid. Choose a window that covers your "
+"whole event."
+msgstr "सहभागी लिंक किती वेळ वैध राहील. संपूर्ण कार्यक्रम कव्हर करणारा कालावधी निवडा."
+
+#: includes/class-wp-curtain-raiser-remote.php:287
+msgid "Generate New Session Link"
+msgstr "नवीन सेशन लिंक तयार करा"
+
+#: includes/class-wp-curtain-raiser-remote.php:288
+msgid "Create Session &amp; Get Link"
+msgstr "सेशन तयार करा &amp; लिंक मिळवा"
+
+#: includes/class-wp-curtain-raiser-remote.php:347
+msgid "An error occurred. Please try again."
+msgstr "त्रुटी झाली. कृपया पुन्हा प्रयत्न करा."
+
+#: includes/class-wp-curtain-raiser-remote.php:355
+msgid "Network error. Please try again."
+msgstr "नेटवर्क त्रुटी. कृपया पुन्हा प्रयत्न करा."
+
+#: includes/class-wp-curtain-raiser-remote.php:369
+msgid ""
+"Signal sent! All attendees' curtains will open within a couple of seconds."
+msgstr "सिग्नल पाठवला! सर्व सहभागींचे पडदा काही सेकंदांत उघडतील."
+
+#: includes/class-wp-curtain-raiser-remote.php:384
+msgid ""
+"Signal sent! All attendees' curtains will close within a couple of seconds."
+msgstr "सिग्नल पाठवला! सर्व सहभागींचे पडदा काही सेकंदांत बंद होतील."
+
+#: includes/class-wp-curtain-raiser-remote.php:405
+#: includes/class-wp-curtain-raiser-remote.php:440
+msgid "Permission denied."
+msgstr "परवानगी नाकारली."
+
+#: includes/class-wp-curtain-raiser-remote.php:426
+msgid ""
+"Session created! Copy the Attendee Link below and share it before your event "
+"starts."
+msgstr "सेशन तयार झाले! खालील सहभागी लिंक कॉपी करा आणि कार्यक्रम सुरू होण्यापूर्वी शेअर करा."
+
+#: includes/class-wp-curtain-raiser-remote.php:445
+msgid "Session ended. The attendee link is no longer active."
+msgstr "सेशन समाप्त झाले. सहभागी लिंक आता सक्रिय नाही."
+
+#: includes/class-wp-curtain-raiser-remote.php:567
+#: includes/class-wp-curtain-raiser-remote.php:609
+msgid "Token not found or already expired."
+msgstr "टोकन सापडले नाही किंवा आधीच कालबाह्य झाले आहे."
+
+#: includes/class-wp-curtain-raiser-settings.php:35
+msgid "WP Curtain Raiser"
+msgstr "WP पडदा रेझर"
+
+#: includes/class-wp-curtain-raiser-settings.php:36
+#: includes/class-wp-curtain-raiser-settings.php:451
+msgid "Curtain Raiser"
+msgstr "पडदा रेझर"
+
+#: includes/class-wp-curtain-raiser-settings.php:60
+msgid "Curtain Appearance"
+msgstr "पडदाचे स्वरूप"
+
+#: includes/class-wp-curtain-raiser-settings.php:68
+msgid "Curtain Style"
+msgstr "पडदा शैली"
+
+#: includes/class-wp-curtain-raiser-settings.php:77
+msgid "Curtain Colour"
+msgstr "पडदा रंग"
+
+#: includes/class-wp-curtain-raiser-settings.php:87
+msgid "Curtain Image"
+msgstr "पडदा प्रतिमा"
+
+#: includes/class-wp-curtain-raiser-settings.php:97
+msgid "Pull-Rope Image"
+msgstr "ओढण्याच्या दोरीची प्रतिमा"
+
+#: includes/class-wp-curtain-raiser-settings.php:106
+msgid "Open / Close Speed"
+msgstr "उघडणे / बंद करणे गती"
+
+#: includes/class-wp-curtain-raiser-settings.php:115
+msgid "Auto-Open Countdown"
+msgstr "स्वयंचलित उघडण्याचा काउंटडाउन"
+
+#: includes/class-wp-curtain-raiser-settings.php:122
+msgid "Enable Countdown"
+msgstr "काउंटडाउन सक्षम करा"
+
+#: includes/class-wp-curtain-raiser-settings.php:130
+msgid "Reveal Date &amp; Time"
+msgstr "उघडण्याची तारीख &amp; वेळ"
+
+#: includes/class-wp-curtain-raiser-settings.php:206
+msgid ""
+"Choose how the curtain looks — pick a built-in style, a custom colour, or "
+"your own image. The pull-rope image and animation speed are also set here."
+msgstr "पडदा कसे दिसेल ते ठरवा — बिल्ट-इन शैली, कस्टम रंग किंवा स्वतःची प्रतिमा निवडा. ओढण्याच्या दोरीची प्रतिमा आणि अ‍ॅनिमेशन गतीही येथे सेट होते."
+
+#: includes/class-wp-curtain-raiser-settings.php:210
+msgid ""
+"Display a live countdown timer over the curtain. When the clock reaches zero "
+"the curtain opens automatically — no one needs to pull the rope."
+msgstr "पडदावर लाईव्ह काउंटडाउन टाइमर दाखवा. घड्याळ शून्यावर पोचल्यावर पडदा आपोआप उघडेल — दोरी ओढण्याची गरज नाही."
+
+#: includes/class-wp-curtain-raiser-settings.php:224
+msgid "Custom — use colour or image below"
+msgstr "कस्टम — खालील रंग किंवा प्रतिमा वापरा"
+
+#: includes/class-wp-curtain-raiser-settings.php:233
+msgid ""
+"Pick a built-in gradient, or choose Custom to set your own colour or upload "
+"an image."
+msgstr "बिल्ट-इन ग्रेडियंट निवडा, किंवा स्वतःचा रंग सेट करण्यासाठी/प्रतिमा अपलोड करण्यासाठी कस्टम निवडा."
+
+#: includes/class-wp-curtain-raiser-settings.php:248
+msgid ""
+"Solid fill colour used when no curtain image is selected. Defaults to dark "
+"red."
+msgstr "पडदा प्रतिमा निवडली नसल्यास ठोस रंग वापरला जाईल. डीफॉल्ट गडद लाल आहे."
+
+#: includes/class-wp-curtain-raiser-settings.php:262
+msgid "Default Curtain"
+msgstr "डीफॉल्ट पडदा"
+
+#: includes/class-wp-curtain-raiser-settings.php:279
+msgid "Curtain image options"
+msgstr "पडदा प्रतिमा पर्याय"
+
+#: includes/class-wp-curtain-raiser-settings.php:283
+msgid "No image (use colour/theme)"
+msgstr "प्रतिमा नाही (रंग/थीम वापरा)"
+
+#: includes/class-wp-curtain-raiser-settings.php:290
+msgid "None"
+msgstr "काहीही नाही"
+
+#: includes/class-wp-curtain-raiser-settings.php:314
+msgid "Upload or choose from Media Library"
+msgstr "अपलोड करा किंवा मीडिया लायब्ररीतून निवडा"
+
+#: includes/class-wp-curtain-raiser-settings.php:324
+msgid "Custom"
+msgstr "कस्टम"
+
+#: includes/class-wp-curtain-raiser-settings.php:339
+msgid "Select Curtain Image"
+msgstr "पडदा प्रतिमा निवडा"
+
+#: includes/class-wp-curtain-raiser-settings.php:340
+#: includes/class-wp-curtain-raiser-settings.php:371
+msgid "Use this image"
+msgstr "ही प्रतिमा वापरा"
+
+#: includes/class-wp-curtain-raiser-settings.php:341
+#: includes/class-wp-curtain-raiser-settings.php:372
+msgid "Choose Image"
+msgstr "प्रतिमा निवडा"
+
+#: includes/class-wp-curtain-raiser-settings.php:351
+msgid ""
+"Choose a bundled image, upload your own, or leave on None to use the colour "
+"or gradient above."
+msgstr "बंडल प्रतिमा निवडा, स्वतःची प्रतिमा अपलोड करा किंवा वरचा रंग/ग्रेडियंट वापरण्यासाठी 'काहीही नाही' ठेवा."
+
+#: includes/class-wp-curtain-raiser-settings.php:370
+msgid "Select Pull-Rope Image"
+msgstr "ओढण्याच्या दोरीची प्रतिमा निवडा"
+
+#: includes/class-wp-curtain-raiser-settings.php:375
+msgid ""
+"The pull-rope guests click to open the curtain. Leave blank to use the "
+"bundled rope."
+msgstr "पडदा उघडण्यासाठी पाहुणे ज्या दोरीवर क्लिक करतात ती. बंडल दोरी वापरण्यासाठी रिकामे ठेवा."
+
+#: includes/class-wp-curtain-raiser-settings.php:398
+msgid ""
+"How long the curtain takes to fully open or close. Drag left for snappier, "
+"right for more dramatic."
+msgstr "पडदा पूर्णपणे उघडणे किंवा बंद होण्यासाठी लागणारा वेळ. जलदसाठी डावीकडे, अधिक नाट्यमय परिणामासाठी उजवीकडे ओढा."
+
+#: includes/class-wp-curtain-raiser-settings.php:413
+msgid ""
+"Show a countdown clock on the curtain and open it automatically when the "
+"timer reaches zero"
+msgstr "पडदावर काउंटडाउन घड्याळ दाखवा आणि टाइमर शून्यावर आल्यावर ते आपोआप उघडा"
+
+#: includes/class-wp-curtain-raiser-settings.php:435
+msgid ""
+"The curtain opens automatically at this date and time. Uses your WordPress "
+"site timezone."
+msgstr "या तारीख व वेळी पडदा आपोआप उघडेल. तुमच्या WordPress साइटचा टाइमझोन वापरला जातो."
+
+#: includes/class-wp-curtain-raiser-settings.php:452
+msgid ""
+"Configure the look and behaviour of your ceremony curtain. Save, then "
+"preview below."
+msgstr "तुमच्या समारंभातील पडदाचे स्वरूप आणि वर्तन कॉन्फिगर करा. सेव करा, नंतर खाली प्रीव्ह्यू पहा."
+
+#: includes/class-wp-curtain-raiser-settings.php:458
+msgid "Save Changes"
+msgstr "बदल जतन करा"
+
+#: includes/class-wp-curtain-raiser-settings.php:464
+msgid "Preview &amp; Share"
+msgstr "प्रीव्ह्यू &amp; शेअर"
+
+#: includes/class-wp-curtain-raiser-settings.php:466
+msgid ""
+"Open the curtain experience in a new tab to check your settings, or copy the "
+"URL below to share with your audience."
+msgstr "तुमच्या सेटिंग्स तपासण्यासाठी पडदा अनुभव नवीन टॅबमध्ये उघडा, किंवा प्रेक्षकांशी शेअर करण्यासाठी खालील URL कॉपी करा."
+
+#: includes/class-wp-curtain-raiser-settings.php:473
+msgid "Preview Curtain ↗"
+msgstr "पडदा प्रीव्ह्यू ↗"
+
+#. translators: %s: the trigger URL
+#: includes/class-wp-curtain-raiser-settings.php:480
+#, php-format
+msgid "Audience URL: %s"
+msgstr "प्रेक्षक URL: %s"
+
+#: includes/class-wp-curtain-raiser-settings.php:488
+msgid "Quick Start"
+msgstr "झटपट सुरुवात"
+
+#. translators: %s: query param
+#: includes/class-wp-curtain-raiser-settings.php:494
+#, php-format
+msgid "Add %s to any page URL to show the curtain."
+msgstr "पडदा दाखवण्यासाठी कोणत्याही पानाच्या URL मध्ये %s जोडा."
+
+#: includes/class-wp-curtain-raiser-settings.php:499
+msgid ""
+"Share that URL with your attendees — they will see the closed curtain on "
+"load."
+msgstr "तो URL सहभागींसोबत शेअर करा — पान लोड होताच त्यांना बंद पडदा दिसेल।"
+
+#: includes/class-wp-curtain-raiser-settings.php:500
+msgid "Attendees pull the rope to open the curtain themselves, or&hellip;"
+msgstr "सहभागी स्वतः दोरी ओढून पडदा उघडू शकतात, किंवा&hellip;"
+
+#. translators: %s: link to remote control page
+#: includes/class-wp-curtain-raiser-settings.php:505
+#, php-format
+msgid ""
+"&hellip;use the %s to open all curtains at once from here in the dashboard."
+msgstr "&hellip;डॅशबोर्डमधून इथूनच सर्व पडदा एकाच वेळी उघडण्यासाठी %s वापरा."
+
+#: includes/class-wp-curtain-raiser.php:183
+msgid "Curtain opened"
+msgstr "पडदा उघडले"
+
+#: includes/class-wp-curtain-raiser.php:184
+msgid "Curtain closed"
+msgstr "पडदा बंद झाले"
+
+#: includes/class-wp-curtain-raiser.php:264
+msgid "Curtain Rope"
+msgstr "पडदा दोरी"
+
+#: includes/class-wp-curtain-raiser.php:320
+msgid "Left Curtain"
+msgstr "डावे पडदा"
+
+#: includes/class-wp-curtain-raiser.php:321
+msgid "Right Curtain"
+msgstr "उजवे पडदा"
+
+#: includes/class-wp-curtain-raiser.php:363
+msgid "Curtain overlay — pull the rope to reveal the page"
+msgstr "पडदा ओव्हरले — पान दाखवण्यासाठी दोरी ओढा"

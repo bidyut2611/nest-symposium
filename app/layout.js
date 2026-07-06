@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from './components/Navbar';
+import InaugurationScreen from './components/InaugurationScreen';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
       <body>
+        <InaugurationScreen />
         <Navbar />
 
         <main style={{ minHeight: 'calc(100vh - 200px)' }}>

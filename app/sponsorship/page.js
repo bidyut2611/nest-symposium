@@ -119,8 +119,8 @@ export default async function SponsorshipPage() {
     try { comparisonData = JSON.parse(comparisonBlock.content); } catch {}
   }
 
-  const tierKeys = ['platinum', 'diamond', 'gold', 'silver', 'bronze'];
-  const tierLabels = ['Platinum Sponsor', 'Diamond Sponsor', 'Gold Sponsor', 'Silver Sponsor', 'Bronze Sponsor'];
+  const tierKeys = ['gold', 'silver', 'bronze'];
+  const tierLabels = ['Gold Sponsor', 'Silver Sponsor', 'Bronze Sponsor'];
 
   return (
     <div>
