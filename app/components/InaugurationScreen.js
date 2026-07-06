@@ -24,10 +24,10 @@ export default function InaugurationScreen() {
     
     const audio = new Audio('/orchestral-fanfare.mp3');
     audio.play().catch(e => console.log("Audio play prevented:", e));
+  };
 
-    setTimeout(() => {
-      setIsVisible(false);
-    }, 2500); // Wait for transition
+  const handleClose = () => {
+    setIsVisible(false);
   };
 
   return (
@@ -50,19 +50,25 @@ export default function InaugurationScreen() {
       </button>
 
       {/* Content behind rope, on top of curtains */}
-      <div className={`inauguration-content ${isOpen ? 'fade-out' : ''}`}>
-        <div className="inauguration-card glass-card">
-          <div className="inauguration-badge">Official Launch</div>
-          <h1 className="inauguration-title">NEST Cluster Octavate Grand Inauguration</h1>
-          <p className="inauguration-date">06 July 2026</p>
+      <div className={`inauguration-content ${isOpen ? 'show' : ''}`}>
+        <div className="inauguration-card glass-card horizontal-layout">
           
-          <div className="inauguration-poster-container">
-            <Image src="/inauguration-poster.jpg" alt="Inauguration Poster" width={250} height={350} className="inauguration-poster" priority />
+          {/* Left Side: Poster */}
+          <div className="inauguration-poster-wrapper">
+            <img src="/inauguration-poster.jpg" alt="Inauguration Poster" className="inauguration-poster-img" />
           </div>
 
-          <button className="btn btn-accent btn-lg inauguration-btn" onClick={handleOpen}>
-            Open Website
-          </button>
+          {/* Right Side: Text & Button */}
+          <div className="inauguration-text-wrapper">
+            <div className="inauguration-badge">Official Launch</div>
+            <h1 className="inauguration-title">NEST Cluster OCTAVATE Grand Inauguration</h1>
+            <p className="inauguration-date">06 July 2026</p>
+
+            <button className="btn btn-accent btn-lg inauguration-btn" onClick={handleClose}>
+              Open Website
+            </button>
+          </div>
+
         </div>
       </div>
     </div>
