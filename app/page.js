@@ -50,7 +50,7 @@ export default async function Home() {
       <section className="section" style={{ backgroundColor: 'var(--bg-surface)' }}>
         <div className="container">
           <div className="text-center mb-8">
-            <h2>Keynote Speakers</h2>
+            <h2>Organizing Team</h2>
             <p className="text-muted mt-2">Hear from the leading minds in technology</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
