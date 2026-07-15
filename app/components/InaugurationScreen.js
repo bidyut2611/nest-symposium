@@ -10,6 +10,10 @@ export default function InaugurationScreen() {
 
   useEffect(() => {
     setIsClient(true);
+    const hasSeenInauguration = sessionStorage.getItem('hasSeenInauguration');
+    if (hasSeenInauguration) {
+      setIsVisible(false);
+    }
   }, []);
 
   if (!isVisible || !isClient) return null;
@@ -23,6 +27,7 @@ export default function InaugurationScreen() {
 
   const handleClose = () => {
     setIsVisible(false);
+    sessionStorage.setItem('hasSeenInauguration', 'true');
   };
 
   return (

@@ -9,11 +9,35 @@ export default async function Home() {
   const aboutTitle = await prisma.contentBlock.findUnique({ where: { slug: 'about-title' } });
   const aboutContent = await prisma.contentBlock.findUnique({ where: { slug: 'about-content' } });
   const registerUrl = await prisma.contentBlock.findUnique({ where: { slug: 'register-url' } });
-  
+
   const featuredSpeakers = await prisma.speaker.findMany({
     take: 3,
     orderBy: { order: 'asc' }
   });
+
+  const organisingTeam = [
+    {
+      id: 'org1',
+      name: 'Prof. Devendra Jalihal',
+      title: 'Chairman, NEST Cluster | IIT Guwahati',
+      bio: 'Prof. Devendra Jalihal is the Director of IIT Guwahati, bringing over 30 years of expertise in wireless communication and digital signal processing.\nHe actively steers the institute toward high-impact regional innovation, technology incubation, and strategic industry partnerships.',
+      imageUrl: '/speaker1.jpg',
+    },
+    {
+      id: 'org2',
+      name: 'Prof. Vimal Katiyar',
+      title: 'Director, NEST Cluster | IIT Guwahati',
+      bio: 'Prof. Vimal Katiyar is a leading Professor in Department of Chemical Engineering at IIT Guwahati and a global pioneer in sustainable polymers and green technology.\nAs the Coordinator of CoE-SusPol, he drives cutting-edge research and commercialization in biodegradable plastics, eco-friendly packaging, and circular bio-economy solutions.',
+      imageUrl: '/speaker2.jpg',
+    },
+    {
+      id: 'org3',
+      name: 'Dr. Kiran Kumar Gali',
+      title: 'CEO, NEST Cluster | IIT Guwahati',
+      bio: 'Dr. Kiran Kumar Gali serves as the Chief Executive Officer of the North Eastern Science & Technology (NEST) Cluster at IIT Guwahati. In this role, he leads a transformative initiative dedicated to accelerating cutting-edge research, pioneering innovation and sustainable skill development across the North Eastern Region of India.',
+      imageUrl: '/speaker3.jpg',
+    }
+  ];
 
   return (
     <div>
@@ -46,7 +70,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Featured Speakers */}
+      {/* Organising Team */}
       <section className="section" style={{ backgroundColor: 'var(--bg-surface)' }}>
         <div className="container">
           <div className="text-center mb-8">
@@ -54,26 +78,54 @@ export default async function Home() {
             <p className="text-muted mt-2">Turning Ideas into Impact</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            {featuredSpeakers.map(speaker => (
-              <div key={speaker.id} className="card text-center">
+            {organisingTeam.map(member => (
+              <div key={member.id} className="card text-center">
                 <div style={{ width: '120px', height: '120px', borderRadius: '50%', backgroundColor: 'var(--primary-light)', margin: '0 auto 1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '2rem', fontWeight: 'bold', overflow: 'hidden' }}>
-                  {speaker.imageUrl ? (
-                    <img src={speaker.imageUrl} alt={speaker.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  {member.imageUrl ? (
+                    <img src={member.imageUrl} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   ) : (
-                    speaker.name.charAt(0)
+                    member.name.charAt(0)
                   )}
                 </div>
-                <h3>{speaker.name}</h3>
-                <p className="text-primary font-weight-bold">{speaker.title}</p>
-                <p className="text-muted mt-2" style={{ fontSize: '0.875rem' }}>{speaker.bio}</p>
+                <h3>{member.name}</h3>
+                <p className="text-primary font-weight-bold">{member.title}</p>
+                <p className="text-muted mt-2" style={{ fontSize: '0.875rem', whiteSpace: 'pre-line' }}>{member.bio}</p>
               </div>
             ))}
           </div>
-          <div className="text-center mt-8">
-            <a href="/speakers" className="btn btn-secondary">View All Speakers</a>
-          </div>
         </div>
       </section>
+
+      {/* Keynote Speakers */}
+      {featuredSpeakers.length > 0 && (
+        <section className="section">
+          <div className="container">
+            <div className="text-center mb-8">
+              <h2>Keynote Speakers</h2>
+              <p className="text-muted mt-2">Hear from the leading minds in technology</p>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+              {featuredSpeakers.map(speaker => (
+                <div key={speaker.id} className="card text-center">
+                  <div style={{ width: '120px', height: '120px', borderRadius: '50%', backgroundColor: 'var(--primary-light)', margin: '0 auto 1rem', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '2rem', fontWeight: 'bold', overflow: 'hidden' }}>
+                    {speaker.imageUrl ? (
+                      <img src={speaker.imageUrl} alt={speaker.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    ) : (
+                      speaker.name.charAt(0)
+                    )}
+                  </div>
+                  <h3>{speaker.name}</h3>
+                  <p className="text-primary font-weight-bold">{speaker.title}</p>
+                  <p className="text-muted mt-2" style={{ fontSize: '0.875rem', whiteSpace: 'pre-line' }}>{speaker.bio}</p>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-8">
+              <a href="/speakers" className="btn btn-secondary">View All Speakers</a>
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   );
 }
