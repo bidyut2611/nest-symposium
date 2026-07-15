@@ -51,7 +51,7 @@ export default async function Home() {
         <div className="container">
           <div className="text-center mb-8">
             <h2>Organizing Team</h2>
-            <p className="text-muted mt-2">Hear from the leading minds in technology</p>
+            <p className="text-muted mt-2">Turning Ideas into Impact</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             {featuredSpeakers.map(speaker => (
