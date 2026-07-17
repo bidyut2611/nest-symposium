@@ -48,7 +48,7 @@ const HACKATHON_PROBLEMS = [
             description: "Develop an AI enabled application or prototype capable of identifying crop diseases, pest attacks or nutrient deficiencies from images captured using mobile devices."
           },
           {
-            id: "PS04",
+            id: "PS02",
             title: "Smart Waste Segregator",
             description: "Develop a computer vision system that identifies and classifies waste items (plastic, organic, paper, metal) from webcam images or uploaded photos."
           }
