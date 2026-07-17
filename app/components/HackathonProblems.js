@@ -151,16 +151,16 @@ export default function HackathonProblems() {
           <h2>Hackathon: Problem Statements</h2>
           <p className="text-muted mt-2">Explore the challenges across four major technology verticals</p>
         </div>
-        
+
         <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
           {HACKATHON_PROBLEMS.map((vert, idx) => (
             <div key={idx} className="card" style={{ borderTop: '4px solid var(--primary)', padding: '2rem' }}>
               <h3 style={{ color: 'var(--secondary)', marginBottom: '1.5rem', fontSize: '1.4rem' }}>{vert.vertical}</h3>
-              
+
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
                 {vert.categories.map((cat, catIdx) => (
                   <div key={catIdx}>
-                    <h4 style={{ 
+                    <h4 style={{
                       display: 'inline-block',
                       backgroundColor: 'var(--bg-main)',
                       padding: '0.4rem 1rem',
@@ -171,23 +171,23 @@ export default function HackathonProblems() {
                     }}>
                       {cat.name}
                     </h4>
-                    
+
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                       {cat.problems.map((prob, pIdx) => (
-                         <div key={pIdx} style={{ 
-                           border: '1px solid var(--border)', 
-                           borderRadius: '8px', 
-                           padding: '1rem',
-                           backgroundColor: 'white'
-                         }}>
-                           <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
-                             <span className="category-badge cat-workshop">{prob.id}</span>
-                             <strong style={{ fontSize: '1rem', lineHeight: '1.3' }}>{prob.title}</strong>
-                           </div>
-                           <p className="text-muted mt-2" style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>
-                             {prob.description}
-                           </p>
-                         </div>
+                        <div key={pIdx} style={{
+                          border: '1px solid var(--border)',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          backgroundColor: 'white'
+                        }}>
+                          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+                            <span className="category-badge cat-workshop">{prob.id}</span>
+                            <strong style={{ fontSize: '1rem', lineHeight: '1.3' }}>{prob.title}</strong>
+                          </div>
+                          <p className="text-muted mt-2" style={{ fontSize: '0.9rem', lineHeight: '1.5' }}>
+                            {prob.description}
+                          </p>
+                        </div>
                       ))}
                     </div>
                   </div>
