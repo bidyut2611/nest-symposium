@@ -69,3 +69,20 @@ model AccommodationOption {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
+
+model StateVisitorCount {
+  id        String   @id @default(cuid())
+  stateCode String   @unique
+  stateName String
+  count     Int      @default(0)
+  updatedAt DateTime @updatedAt
+}
+
+model VisitorLog {
+  id            String   @id @default(cuid())
+  ipAddress     String
+  detectedState String   @default("")
+  visitedAt     DateTime @default(now())
+
+  @@index([ipAddress, visitedAt])
+}

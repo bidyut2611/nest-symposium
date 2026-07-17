@@ -1,4 +1,5 @@
 import prisma from '../lib/prisma.js';
+import VisitorCounter from './components/VisitorCounter';
 
 export const revalidate = 0; // Disable static caching for live data
 
@@ -126,6 +127,9 @@ export default async function Home() {
           </div>
         </section>
       )}
+
+      {/* Visitor Counter */}
+      <VisitorCounter />
     </div>
   );
 }
