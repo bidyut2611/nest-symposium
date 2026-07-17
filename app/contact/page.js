@@ -46,9 +46,9 @@ export default async function ContactPage() {
             <div className="contact-card">
               <div className="contact-icon">📞</div>
               <h3>Phone</h3>
-              <p>{phone?.content || '+91 361 258 2000'}</p>
+              <p>{phone?.content || '+91 361 291 4069'}</p>
               <a
-                href={`tel:${(phone?.content || '+91 361 258 2000').replace(/\s/g, '')}`}
+                href={`tel:${(phone?.content || '+91 361 291 4069').replace(/\s/g, '')}`}
                 className="btn btn-outline mt-4"
                 style={{ fontSize: '0.9rem', padding: '0.5rem 1.25rem' }}
               >
