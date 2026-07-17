@@ -48,24 +48,6 @@ export async function POST(request) {
     // Normalize IPv6 loopback
     if (ip === '::1') ip = '127.0.0.1';
 
-    // 2. Check for duplicate visit within last 24 hours
-    const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
-
-    const existingVisit = await prisma.visitorLog.findFirst({
-      where: {
-        ipAddress: ip,
-        visitedAt: { gte: twentyFourHoursAgo },
-      },
-    });
-
-    if (existingVisit) {
-      // Already counted — just return current counts
-      const states = await prisma.stateVisitorCount.findMany({
-        orderBy: { count: 'desc' },
-      });
-      const total = states.reduce((sum, s) => sum + s.count, 0);
-      return Response.json({ states, total, alreadyCounted: true });
-    }
 
     // 3. Geolocate the IP using ip-api.com
     let detectedState = '';

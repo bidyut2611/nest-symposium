@@ -108,25 +108,9 @@ export default function VisitorCounter() {
   useEffect(() => {
     async function recordVisit() {
       try {
-        const lastCounted = localStorage.getItem(VISITOR_COUNTED_KEY);
-        const now = Date.now();
-        const shouldPost =
-          !lastCounted || now - parseInt(lastCounted, 10) > 24 * 60 * 60 * 1000;
-
-        let data;
-
-        if (shouldPost) {
-          const res = await fetch('/api/visitors', { method: 'POST' });
-          if (!res.ok) throw new Error('Failed to record visit');
-          data = await res.json();
-          if (!data.alreadyCounted) {
-            localStorage.setItem(VISITOR_COUNTED_KEY, now.toString());
-          }
-        } else {
-          const res = await fetch('/api/visitors');
-          if (!res.ok) throw new Error('Failed to fetch counts');
-          data = await res.json();
-        }
+        const res = await fetch('/api/visitors', { method: 'POST' });
+        if (!res.ok) throw new Error('Failed to record visit');
+        const data = await res.json();
 
         setStates(data.states || []);
         setTotal(data.total || 0);
