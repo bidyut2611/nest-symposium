@@ -23,7 +23,8 @@ export default function Navbar() {
       path: '/program',
       sublinks: [
         { name: 'Program Schedule', path: '/program' },
-        { name: 'Hackathon Problems', path: '/program#hackathon' }
+        { name: 'Hackathon Problems', path: '/program#hackathon' },
+        { name: 'OCTAVATE Resources', path: '/program/resources' }
       ]
     },
     { name: 'Speakers', path: '/speakers' },
