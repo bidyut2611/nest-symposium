@@ -34,7 +34,7 @@ export default function Navbar() {
       path: '/sponsorship',
       sublinks: [
         { name: 'Sponsorship Packages', path: '/sponsorship' },
-        { name: 'Sponsor List', path: '/sponsorship/list' }
+        { name: 'Associate Partners', path: '/sponsorship/list' }
       ]
     },
     { name: 'Accommodation', path: '/accommodation' },
