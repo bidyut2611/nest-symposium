@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Sponsor List | OCTAVATE',
+  title: 'Associate Partners List | OCTAVATE',
   description: 'View the esteemed local and global sponsors for the OCTAVATE symposium.',
 };
 
