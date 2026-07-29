@@ -29,7 +29,14 @@ export default function Navbar() {
     },
     { name: 'Speakers', path: '/speakers' },
     { name: 'Registration', path: '/register' },
-    { name: 'Sponsorship', path: '/sponsorship' },
+    { 
+      name: 'Sponsorship', 
+      path: '/sponsorship',
+      sublinks: [
+        { name: 'Sponsorship Packages', path: '/sponsorship' },
+        { name: 'Sponsor List', path: '/sponsorship/list' }
+      ]
+    },
     { name: 'Accommodation', path: '/accommodation' },
     { name: 'Contact', path: '/contact' },
   ];
