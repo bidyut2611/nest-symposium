@@ -11,7 +11,7 @@ export default function SponsorList() {
       {/* Hero Section */}
       <section className="page-hero">
         <div className="container animate-fade-in">
-          <h1>Sponsor List</h1>
+          <h1>Associate Partners</h1>
           <p style={{ marginBottom: '1rem', maxWidth: '800px', margin: '0 auto' }}>
             North Eastern Science & Technology Cluster (NEST) for promoting Research, Innovation & Skill Development proudly presents the sponsors for OCTAVATE.
           </p>
