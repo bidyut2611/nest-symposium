@@ -26,7 +26,7 @@ export default function SponsorList() {
           <div style={{ marginBottom: '5rem' }}>
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
               <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)', marginBottom: '1rem', fontWeight: 'bold' }}>
-                Sponsor List for OCTAVATE: LOCAL
+                 Associate Partners for OCTAVATE: LOCAL
               </h2>
               <div style={{ width: '100px', height: '4px', backgroundColor: 'var(--accent)', margin: '0 auto' }}></div>
             </div>
@@ -45,7 +45,7 @@ export default function SponsorList() {
           <div style={{ marginBottom: '3rem' }}>
             <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
               <h2 style={{ fontSize: '2.5rem', color: 'var(--primary)', marginBottom: '1rem', fontWeight: 'bold' }}>
-                Sponsor List for OCTAVATE: GLOBAL
+                Associate Partners for OCTAVATE: GLOBAL
               </h2>
               <div style={{ width: '100px', height: '4px', backgroundColor: 'var(--accent)', margin: '0 auto' }}></div>
             </div>
