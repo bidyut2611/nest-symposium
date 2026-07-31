@@ -46,7 +46,7 @@ export default async function RegisterPage() {
 
               {qrUrl?.content && (
                 <div style={{ textAlign: 'center' }}>
-                  <p style={{ fontWeight: '600', marginBottom: '1rem' }}>Scan to Pay</p>
+                  <p style={{ fontWeight: '600', marginBottom: '1rem' }}>Make payment to the above Nest cluster Account</p>
                   <img 
                     src={qrUrl.content} 
                     alt="Payment QR Code" 
