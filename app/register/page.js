@@ -49,7 +49,7 @@ export default async function RegisterPage() {
                   <p style={{ fontWeight: '600', marginBottom: '1rem' }}>Make payment to the above Nest cluster Account</p>
                   <img 
                     src={qrUrl.content} 
-                    alt="Payment QR Code" 
+                    alt="Submit the Payment receipt details as Pdf or image in Registration Form" 
                     style={{ maxWidth: '250px', margin: '0 auto', border: '1px solid var(--border)', borderRadius: '8px', padding: '0.5rem', backgroundColor: 'white' }} 
                   />
                 </div>
